@@ -15,7 +15,7 @@ public class CommandFactions extends Command {
 	private String targetServer = "Factions-1";
 	
 	public CommandFactions() {
-		super("hub","internal.server.factions",new String[0]);
+		super("factions","internal.server.factions",new String[0]);
 	}
 	
 	public void execute(CommandSender sender, String[] args) {

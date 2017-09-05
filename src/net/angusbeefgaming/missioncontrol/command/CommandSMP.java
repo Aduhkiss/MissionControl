@@ -15,7 +15,7 @@ public class CommandSMP extends Command {
 	private String targetServer = "SMP-1";
 	
 	public CommandSMP() {
-		super("hub","internal.server.smp",new String[0]);
+		super("smp","internal.server.smp",new String[0]);
 	}
 	
 	public void execute(CommandSender sender, String[] args) {
