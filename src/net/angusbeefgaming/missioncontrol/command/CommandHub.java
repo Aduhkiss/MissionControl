@@ -26,14 +26,12 @@ public class CommandHub extends Command {
 			// Check if they are already on the hub
 			if (!player.getServer().getInfo().getName().equalsIgnoreCase(targetServer)) {
 				// If they are not...
-				// Save that servers name
-				String oldServer = ((CommandSender) player.getServer()).getName();
 				
 				// Grab the information about the server...
 				ServerInfo target = ProxyServer.getInstance().getServerInfo(targetServer);
 				// And connect them to it!
 				player.connect(target);
-				player.sendMessage(ChatColor.BLUE + "Portal> " + ChatColor.GRAY + "You have been sent from " + ChatColor.GOLD + oldServer + ChatColor.GRAY + " to " + ChatColor.GOLD + "Hub-1");
+				player.sendMessage(ChatColor.BLUE + "Portal> " + ChatColor.GRAY + "You have been sent to " + ChatColor.GOLD + "Hub-1");
 			}
 			else {
 				player.sendMessage(ChatColor.RED + "You are already connected to this server!");
